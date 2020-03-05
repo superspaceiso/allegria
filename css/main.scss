@@ -6,15 +6,78 @@ $bannerImage: "../img/allegria_banner.jpg";
 $desktopContainer: 1200px;
 $mobileContainer: 600px;
 
+@mixin font-weight($weight) {
+  $weights: (
+    thin: 100,
+    extra-light: 200,
+    ultra-light: 200,
+    light: 300,
+    normal: 400,
+    book: 400,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600,
+    demi-bold: 600,
+    bold: 700,
+    extra-bold: 800,
+    ultra-bold: 900,
+    heavy: 900,
+    black: 900,
+    ultra: 900,
+    ultra-black: 900,
+    extra-ultra: 900
+  );
+
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+
+  font-weight: $output;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: calculateRem($size);
+}
+
 body{
   font-family: $font;
   color: $bodyText;
   background-color: $allegriaGold;
 }
 
+p.price{
+  margin: 0;
+  @include fontSize(18px);
+  @include font-weight(semi-bold)
+}
+
+h1, h2, h3, h4{
+  margin: 0;
+  @include font-weight(bold);
+}
+
 h1 {
   color: white;
   text-align: center;
+  @include fontSize(28px);
+}
+h2{
+  @include fontSize(40px);
+}
+
+h3{
+  @include fontSize(32px);
+}
+
+h4{
+  @include fontSize(18px);
+  color: $allegriaGreen;
 }
 
 .container{
@@ -46,6 +109,8 @@ nav{
   text-align: right;
   padding-top: 50px;
   height: 100px;
+  @include  fontSize(20px);
+  @include font-weight(semi-bold);
   ul{
     list-style: none;
   }
