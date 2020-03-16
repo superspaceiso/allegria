@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -28,11 +29,20 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/brands.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+
+    Modernizr.on('webp', function (result) {
+      if (result) {
+        // supported
+      } else {
+        // not-supported
+      }
+    });
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
@@ -48,9 +58,9 @@
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#home">Menu</a></li>
-        <li><a href="#home">Offers</a></li>
-        <li><a href="#home">Find Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#find-us">Find Us</a></li>
       </ul>
     </nav>
     </header>
@@ -59,14 +69,14 @@
   <header class="siteBanner">
     <div class="container">
       <div class="bannerText">
-        <h1>Allegria, the new family friendly Italian Restaurant in the heart of Lytham St Annes.<br>We aim to provide top quality authentic Italian dishes using fresh local produce and an extensive wine list to suit every palate.</h1>
+        <h1 id="home">Allegria, the new family friendly Italian Restaurant in the heart of Lytham St Annes.<br>We aim to provide top quality authentic Italian dishes using fresh local produce and an extensive wine list to suit every palate.</h1>
       </div>
     </div>
   </header>
   <div class="container">
     <section>
       <div class="header">
-        <h2>Menu</h2>
+        <h2 id="menu">Menu</h2>
       </div>
       <div class="subHeader">
         <h3>Starters</h3>
@@ -85,6 +95,22 @@
               <p></p>
             </div>
             <div></div>
+          </div>
+        </div>
+        <div class="menuItem">
+          <div class="menuItemWrapper">
+            <div>
+              <h4>Pizza</h4>
+            </div>
+            <div>
+              <p class="price">£9.99</p>
+            </div>
+            <div>
+              <p></p>
+              <p></p>
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
       <div class="menuFooter">
@@ -96,13 +122,35 @@
 
     <section>
       <div class="header">
-        <h2>Offers</h2>
+        <h2 id="offers">Offers</h2>
       </div>
     </section>
 
     <section>
       <div class="header">
-        <h2>Find Us</h2>
+        <h2 id="find-us">Find Us</h2>
+      </div>
+      <div class="menuWrapper">
+        <div class="contactList">
+          <ul>
+            <li>Address</li>
+            <li>27 St Anne's Road West, Lytham St Annes, FY8 1SB</li>
+            <li>We're Open</li>
+            <li>Monday - Friday: 17:00 to 22:00 <br> Saturday - Sunday: 12:00 to 22:00</li>
+            <Li>Telephone</Li>
+            <li>01253 781963</li>
+            <li>E-Mail</li>
+            <li>allegriastannes@gmail.com</li>
+            <li>Social Media</li>
+            <li>
+              <a href=""><span class="icons fab fa-twitter-square fa-2x"></span></a>
+              <a href="https://www.facebook.com/allegriaitalian/"><span class="icons fab fa-facebook-square fa-2x"></span></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.034780025482178%2C53.750201671300744%2C-3.0276989936828618%2C53.753135684482764&amp;layer=mapnik" ></iframe>
+        </div>
       </div>
     </section>
   </div>

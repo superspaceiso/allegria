@@ -168,7 +168,7 @@ nav{
   @media screen and (max-width: 420px) {
     background-image: url("../img/allegria_banner_s.jpg");
   }
-  
+
 }
 
 .bannerText{
@@ -220,6 +220,30 @@ section{
   display: grid;
   grid-template-columns: 80fr 20fr;
 }
+
+.contactList {
+  ul{
+  list-style: none;
+  text-align: center;
+  padding-left:0;
+  }
+  li{
+    padding-bottom: 10px;
+  }
+  li:nth-child(odd){
+    color: $allegriaGreen;
+    @include fontSize(18px);
+    @include font-weight(bold);
+  }
+}
+
+.icons{
+  color: black;
+  &:hover{
+    color: $allegriaGreen;
+  }
+}
+
 
 footer{
   min-height: 40px;

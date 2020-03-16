@@ -56,6 +56,13 @@ section:last-child { margin-bottom: 30px; }
 
 .menuItemWrapper { display: grid; grid-template-columns: 80fr 20fr; }
 
+.contactList ul { list-style: none; text-align: center; padding-left: 0; }
+.contactList li { padding-bottom: 10px; }
+.contactList li:nth-child(odd) { color: #3A8278; font-size: 1.125rem; font-weight: 700; }
+
+.icons { color: black; }
+.icons:hover { color: #3A8278; }
+
 footer { min-height: 40px; height: auto; padding-top: 10px; background-color: #ffffff; text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
