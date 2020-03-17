@@ -46,10 +46,15 @@ $mobileContainer: 360px;
   font-size: calculateRem($size);
 }
 
+html{
+  min-height: 100%;
+}
+
 body{
   font-family: $font;
   color: $bodyText;
   background-color: $allegriaGold;
+  @include fontSize(16px);
 }
 
 p.price{
@@ -67,6 +72,7 @@ h1, h2, h3, h4{
 h1 {
   color: white;
   text-align: center;
+  text-shadow: 2px 2px 2px black;
   @include fontSize(28px);
 }
 h2{
@@ -173,7 +179,7 @@ nav{
 
 .bannerText{
   height: 100px;
-  padding-top: 60px;
+  padding-top: 120px;
 }
 
 section{
@@ -221,6 +227,26 @@ section{
   grid-template-columns: 80fr 20fr;
 }
 
+.offers{
+  text-align: center;
+}
+
+p.offersHeader{
+  @include fontSize(40px);
+  @include font-weight(bold);
+  margin: 10px;
+}
+
+p.offersSubheader{
+  @include fontSize(38px);
+  @include font-weight(semi-bold);
+  margin: 0;
+}
+
+p.offersFooter{
+  @include font-weight(bold);
+}
+
 .contactList {
   ul{
   list-style: none;
@@ -239,17 +265,19 @@ section{
 
 .icons{
   color: black;
+  padding: 0.15em 0.15em 0 0;
   &:hover{
     color: $allegriaGreen;
   }
 }
 
-
 footer{
-  min-height: 40px;
-  height: auto;
-  padding-top: 10px;
+  min-height: 30px;
+  padding-top: 20px;
   background-color: #ffffff;
   text-align: center;
+  p{
+    margin: 0;
+  }
 }
 

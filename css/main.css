@@ -1,10 +1,12 @@
-body { font-family: "Overpass", sans-serif; color: #000000; background-color: #BC9F73; }
+html { min-height: 100%; }
+
+body { font-family: "Overpass", sans-serif; color: #000000; background-color: #BC9F73; font-size: 1rem; }
 
 p.price { margin: 0; text-align: right; font-size: 1.125rem; font-weight: 600; }
 
 h1, h2, h3, h4 { margin: 0; font-weight: 700; }
 
-h1 { color: white; text-align: center; font-size: 1.75rem; }
+h1 { color: white; text-align: center; text-shadow: 2px 2px 2px black; font-size: 1.75rem; }
 
 h2 { font-size: 2.5rem; }
 
@@ -37,7 +39,7 @@ nav a:hover { color: #3A8278; border-bottom: 2px solid #3A8278; }
 @media screen and (max-width: 1200px) { .siteBanner { background-image: url("../img/allegria_banner_m.jpg"); } }
 @media screen and (max-width: 420px) { .siteBanner { background-image: url("../img/allegria_banner_s.jpg"); } }
 
-.bannerText { height: 100px; padding-top: 60px; }
+.bannerText { height: 100px; padding-top: 120px; }
 
 section { padding: 30px; margin-top: 30px; background-color: #ffffff; }
 section:last-child { margin-bottom: 30px; }
@@ -56,13 +58,22 @@ section:last-child { margin-bottom: 30px; }
 
 .menuItemWrapper { display: grid; grid-template-columns: 80fr 20fr; }
 
+.offers { text-align: center; }
+
+p.offersHeader { font-size: 2.5rem; font-weight: 700; margin: 10px; }
+
+p.offersSubheader { font-size: 2.375rem; font-weight: 600; margin: 0; }
+
+p.offersFooter { font-weight: 700; }
+
 .contactList ul { list-style: none; text-align: center; padding-left: 0; }
 .contactList li { padding-bottom: 10px; }
 .contactList li:nth-child(odd) { color: #3A8278; font-size: 1.125rem; font-weight: 700; }
 
-.icons { color: black; }
+.icons { color: black; padding: 0.15em 0.15em 0 0; }
 .icons:hover { color: #3A8278; }
 
-footer { min-height: 40px; height: auto; padding-top: 10px; background-color: #ffffff; text-align: center; }
+footer { min-height: 30px; padding-top: 20px; background-color: #ffffff; text-align: center; }
+footer p { margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
