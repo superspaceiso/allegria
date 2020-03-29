@@ -4,18 +4,66 @@
 <head>
   <meta charset="utf-8">
   <title>Allegria - Italian Restaurant - Lytham St Annes</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "image": [
+        "https//allegria.ltd/img/allegria_logo.png",
+      ],
+      "@id": "https://allegria.ltd",
+      "name": "Allegria",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "27 St Annes Road West",
+        "addressLocality": "Lytham Saint Annes",
+        "addressRegion": "England",
+        "postalCode": "FY8 1SB",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.7517045,
+        "longitude": -3.0315783
+      },
+      "url": "https://allegria.ltd",
+      "telephone": "01253781936",
+      "servesCuisine": "Italian",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "17:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "12:00",
+          "closes": "22:00"
+        }
+      ],
+      "menu": "https//allegria.ltd/#menu",
+      "acceptsReservations": "True"
+    }
+  </script>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -23,9 +71,6 @@
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
-  <!-- Add your site or application content here -->
-
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -42,7 +87,7 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  <header class="outer">
+<!--  <header class="outer">
     <div class="container">
     <header class="inner">
     <div class="logo">
@@ -57,11 +102,34 @@
         <li><a href="#menu">Menu</a></li>
         <li><a href="#offers">Offers</a></li>
         <li><a href="#find-us">Find Us</a></li>
+        <li><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
     </header>
     </div>
+  </header>-->
+  <header>
+  <div class="container">
+  <nav>
+    <ul class="menu">
+      <li class="logo">
+        <picture>
+          <source type="image/svg+xml" srcset="img/allegria_logo.svg">
+          <img src="img/allegria_logo.png" alt="Allegria">
+        </picture>
+      </li>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#menu">Menu</a></li>
+      <li class="item"><a href="#offers">Offers</a></li>
+      <li class="item"><a href="#find-us">Find Us</a></li>
+      <li class="item"><a href="#contact">Contact</a>
+      </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  </div>
   </header>
+
   <header class="siteBanner">
     <div class="container">
       <div class="bannerText">
@@ -168,6 +236,19 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.min.css"></script>
+  <script>
+    $(function() {
+      $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+          $(this).find("a").html("<i class='fas fa-bars'></i>");
+        } else {
+          $(".item").addClass("active");
+          $(this).find("a").html("<i class='fas fa-bars'></i>");
+        }
+      });
+    });
+  </script>
 
 </body>
 

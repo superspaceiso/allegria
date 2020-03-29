@@ -1,4 +1,4 @@
-html { min-height: 100%; }
+html { min-height: 100%; scroll-behavior: smooth; }
 
 body { font-family: "Overpass", sans-serif; color: #000000; background-color: #BC9F73; font-size: 1rem; }
 
@@ -7,6 +7,7 @@ p.price { margin: 0; text-align: right; font-size: 1.125rem; font-weight: 600; }
 h1, h2, h3, h4 { margin: 0; font-weight: 700; }
 
 h1 { color: white; text-align: center; text-shadow: 2px 2px 2px black; font-size: 1.75rem; }
+@media screen and (max-width: 400px) { h1 { font-size: 1.5rem; } }
 
 h2 { font-size: 2.5rem; }
 
@@ -18,21 +19,27 @@ h4 { font-size: 1.125rem; color: #3A8278; }
 @media screen and (min-width: 800px) { .container { width: auto; max-width: 1200px; } }
 @media screen and (max-width: 360px) { .container { width: auto; max-width: 360px; } }
 
-header.outer { height: 150px; background-color: #ffffff; }
+.logo { width: 140px; height: 140px; }
+.logo img { height: 100%; width: auto; }
 
-header.inner { display: grid; grid-template-columns: 1fr 1fr; }
+header { background-color: #ffffff; }
 
-.logo { margin-top: 10px; width: 140px; height: 140px; }
-.logo img { height: 130px; width: auto; }
-
-nav { text-align: right; padding-top: 50px; height: 100px; font-size: 1.25rem; font-weight: 600; }
-nav ul { list-style: none; }
-nav li { display: inline; padding-right: 10px; }
-nav li:last-child { padding-right: unset; }
-nav a { text-decoration: none; }
-nav a:link { color: #000000; }
-nav a:visited { color: black; }
+nav { font-size: 1.25rem; font-weight: 600; /* Mobile menu */ /* Desktop menu */ }
+nav ul { list-style-type: none; margin: 0; padding: 0; }
+nav a { color: #000000; text-decoration: none; }
+nav a:visited { color: #000000; }
 nav a:hover { color: #3A8278; border-bottom: 2px solid #3A8278; }
+nav .menu li { padding: 10px; white-space: nowrap; }
+nav .toggle a { font-size: 3.75rem; }
+nav .toggle a:hover { border-bottom: unset; }
+nav .menu { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+nav .toggle { order: 1; }
+nav .item { width: 100%; order: 3; display: none; }
+nav .item.active { display: block; }
+@media all and (min-width: 600px) { nav .item { display: block; width: auto; order: 1; }
+  nav .toggle { display: none; }
+  nav .logo { flex: 1; }
+  nav .menu li { padding: 15px 10px; } }
 
 .siteBanner { height: 400px; border-bottom: 1px solid #ffffff; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 @media screen and (min-width: 1200px) { .siteBanner { background-image: url("../img/allegria_banner.jpg"); } }
@@ -40,6 +47,8 @@ nav a:hover { color: #3A8278; border-bottom: 2px solid #3A8278; }
 @media screen and (max-width: 420px) { .siteBanner { background-image: url("../img/allegria_banner_s.jpg"); } }
 
 .bannerText { height: 100px; padding-top: 120px; }
+@media screen and (max-width: 420px) { .bannerText { padding-top: 20px; } }
+@media screen and (max-width: 600px) { .bannerText { padding-top: 80px; } }
 
 section { padding: 30px; margin-top: 30px; background-color: #ffffff; }
 section:last-child { margin-bottom: 30px; }

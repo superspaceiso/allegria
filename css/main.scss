@@ -48,6 +48,7 @@ $mobileContainer: 360px;
 
 html{
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -74,6 +75,9 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 2px black;
   @include fontSize(28px);
+  @media screen and (max-width: 400px) {
+    @include fontSize(24px);
+  }
 }
 h2{
   @include fontSize(40px);
@@ -100,62 +104,95 @@ h4{
   }
 }
 
-header.outer{
-  height: 150px;
-  background-color: #ffffff;
-}
-
-header.inner{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .logo {
-  margin-top: 10px;
   width: 140px;
   height: 140px;
   img {
-    height: 130px;
+    height: 100%;
     width: auto;
   }
 }
 
-nav{
-  text-align: right;
-  padding-top: 50px;
-  height: 100px;
+header{
+  background-color: #ffffff;
+}
+
+nav {
   @include fontSize(20px);
   @include font-weight(semi-bold);
-  ul{
-    list-style: none;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
-  li{
-    display: inline;
-    padding-right: 10px;
-  }
-
-  li:last-child{
-    padding-right: unset;
-  }
-
-  a{
+  a {
+    color: #000000;
     text-decoration: none;
 
-    &:link{
+    &:visited {
       color: #000000;
     }
 
-    &:visited{
-      color: black;
-    }
-
-    &:hover{
+    &:hover {
       color: $allegriaGreen;
       border-bottom: 2px solid $allegriaGreen;
     }
-
   }
+
+  .menu li {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .toggle {
+    a {
+      @include fontSize(60px);
+
+      &:hover {
+        border-bottom: unset;
+      }
+    }
+  }
+
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item {
+    width: 100%;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+
+  /* Desktop menu */
+  @media all and (min-width: 600px) {
+    .item {
+      display: block;
+      width: auto;
+      order: 1;
+    }
+    .toggle {
+      display: none;
+    }
+    .logo {
+      flex: 1;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+  }
+
 }
 
 .siteBanner{
@@ -180,6 +217,12 @@ nav{
 .bannerText{
   height: 100px;
   padding-top: 120px;
+  @media screen and (max-width: 420px) {
+    padding-top: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    padding-top: 80px;
+  }
 }
 
 section{
