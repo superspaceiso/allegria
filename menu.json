@@ -1,679 +1,677 @@
 {
-  "menu": {
-    "title": "Allegria Menu",
-    "created": "2020-03-27T00:00:00.000Z",
-    "last_updated": "2020-03-27T00:00:00.000Z",
-    "menuSection": [
-      {
-        "name": "starters and salads",
-        "menuItem": [
-          {
-            "head": "sicilian salad",
-            "vegetarian": false,
-            "price": 5.95,
-            "subhead": "",
-            "description": "cheese tomatoes, green beans, olives, capers, onions, boiled potatoes (add tuna for extra 95p)"
-          },
-          {
-            "head": "insalata fonna e fagioli",
-            "vegetarian": false,
-            "price": 6.95,
-            "subhead": "",
-            "description": "tuna, beans, red onions, cherry tomatoes, olive oil dressing"
-          },
-          {
-            "head": "insalata di salmone",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "salm,on, asparagus, boiled potatoes, cherry tomatoes, avocado, lemon dressing, balsamic sauce"
-          },
-          {
-            "head": "fritto misto",
-            "vegetarian": false,
-            "price": 14.95,
-            "subhead": "plate to share",
-            "description": "deep fried calarmi, king praws, scallops and cold, served with aioli sauce"
-          },
-          {
-            "head": "pate di salmone",
-            "vegetarian": false,
-            "price": 6.95,
-            "subhead": "",
-            "description": "home-made salmon pate, served with toasted bread"
-          },
-          {
-            "head": "bruschetta di mare",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "prawns and marie rose sauce, fresh crab meat and tomatoes, salmon pate, tuna, avocado, onions and lime"
-          },
-          {
-            "head": "bruschetta",
-            "vegetarian": true,
-            "price": 4.45,
-            "subhead": "",
-            "description": "toasted bread with fresh tomato, garlic, oregano, olive oil and basil"
-          },
-          {
-            "head": "gamberi alla fragola",
-            "vegetarian": false,
-            "price": 7.45,
-            "subhead": "",
-            "description": "prawns awith mayonnaise and strawberries on a bed of julienne (thin slices) of apples, served with fried bread"
-          },
-          {
-            "head": "cocktail di gamberi",
-            "vegetarian": false,
-            "price": 6.95,
-            "subhead": "",
-            "description": "classical prawn cocktail with a romaine lettuce and marie rose sauce"
-          },
-          {
-            "head": "gamberoni all grancia",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "king prawns cooked with brandy,  orange zest, garlic and butter"
-          },
-          {
-            "head": "funghi al formaggio",
-            "vegetarian": false,
-            "price": 6.45,
-            "subhead": "",
-            "description": "oyster, button and chestnut mushrooms cooked in cheese sauce, served with toasted bread"
-          },
-          {
-            "head": "calmari fritti",
-            "vegetarian": false,
-            "price": 6.45,
-            "subhead": "",
-            "description": "deep fried squid served on a bed of salad, served with tartar sauce"
-          },
-          {
-            "head": "pate di pollo",
-            "vegetarian": false,
-            "price": 5.95,
-            "subhead": "",
-            "description": "home-made chicken liver pate servd with toast and chutnet"
-          },
-          {
-            "head": "fregtini alla salvia",
-            "vegetarian": false,
-            "price": 6.65,
-            "subhead": "",
-            "description": "chicken livers cooked with onions, white wine, sage and demi-glace"
-          },
-          {
-            "head": "tricolore",
-            "vegetarian": false,
-            "price": 7.25,
-            "subhead": "",
-            "description": "fresh tomatoes, mozzarella, parma ham on a bed of rocket salad"
-          },
-          {
-            "head": "cozze crema",
-            "vegetarian": false,
-            "price": 6.95,
-            "subhead": "",
-            "description": "mussles in white wine, cream sauce with shallots, served with a toasted bread"
-          },
-          {
-            "head": "cozze marinara",
-            "vegetarian": false,
-            "price": 6.95,
-            "subhead": "",
-            "description": "mussles cooked in tomato sauce garlic and white wine, served with a fried bread"
-          },
-          {
-            "head": "zuppa del giorno",
-            "vegetarian": false,
-            "price": 4.95,
-            "subhead": "",
-            "description": "soup of the day served with home-made bread of the day"
-          },
-          {
-            "head": "capiese",
-            "vegetarian": true,
-            "price": 6.25,
-            "subhead": "",
-            "description": "fresh tomatoes, mozzarella served on a bed of rocket salad with fresh basil and olive oil"
-          },
-          {
-            "head": "invollino di salmone",
-            "vegetarian": false,
-            "price": 7.45,
-            "subhead": "",
-            "description": "smoked salmon rolled with prawns and marie rose sauce"
-          },
-          {
-            "head": "capesante al pioasciatto",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "pan-fried king scallops warpped in parma ham, srved on bed of mashed peas"
-          },
-          {
-            "head": "caeasar salad",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "classical ceaser sald with chicken home-made ceaser sauce"
-          },
-          {
-            "head": "insalata di mare",
-            "vegetarian": false,
-            "price": 8.95,
-            "subhead": "",
-            "description": "seafood salad made of prawns, mussles, calamari, onion, celery, carrots, caper, olives, garlic and oregano"
-          }
-        ]
-      },
-      {
-        "name": "garlic breads",
-        "menuItem": [
-          {
-            "head": "rosetta",
-            "vegetarian": false,
-            "price": 4.95,
-            "subhead": "",
-            "description": "rose shaped garlic bread filled with garlic, parmesan, cheese, parsley and oregano, served with a chilli sauce dip"
-          },
-          {
-            "head": "caprino",
-            "vegetarian": false,
-            "price": 4.65,
-            "subhead": "",
-            "description": "garlic bread with gaots cheese and caramelised onions"
-          },
-          {
-            "head": "siciliana",
-            "vegetarian": false,
-            "price": 4.55,
-            "subhead": "",
-            "description": "garlic bread with tomato, oregano, parmesan and achovies"
-          },
-          {
-            "head": "plain",
-            "vegetarian": false,
-            "price": 3.95,
-            "subhead": "",
-            "description": "garlic bread with salt, rosemary and oregano"
-          },
-          {
-            "head": "cheese",
-            "vegetarian": false,
-            "price": 4.65,
-            "subhead": "",
-            "description": "garlic bread with mozzarella cheese and oregano"
-          },
-          {
-            "head": "tomata",
-            "vegetarian": false,
-            "price": 4.25,
-            "subhead": "",
-            "description": "garlic bread with tomato, oregano and parsley"
-          },
-          {
-            "head": "calabrese",
-            "vegetarian": false,
-            "price": 4.35,
-            "subhead": "",
-            "description": "garlic bread with tomato, oregano, red onion and fresh chillies"
-          },
-          {
-            "head": "pizzella frilla",
-            "vegetarian": false,
-            "price": 5.45,
-            "subhead": "",
-            "description": "fried pizza topped with fresh tomatoes, a touch of peseto and parmesan shavings"
-          }
-        ]
-      },
-      {
-        "name": "pasta e risotti",
-        "menuItem": [
-          {
-            "head": "paccheri mediterrani",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "large tubes of pasta cooked with seabass, white wine, garlic, pistachios, cherry tomoes and a touch of tomato sauce"
-          },
-          {
-            "head": "paccheri alla Siciliana",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "large tubes of pasta cooked with Sicilian sausage, broccoli, raisins, pine nuts, garlic and fennel seeds topped with spicy bread crumbs"
-          },
-          {
-            "head": "goncchi al pesto",
-            "vegetarian": true,
-            "price": 8.95,
-            "subhead": "",
-            "description": "potato dumplings in home-made pesto sauce"
-          },
-          {
-            "head": "spaghetti alla polpa di granchio",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "spaghetti with crab meat, garlic, a touch of white wine and chillies"
-          },
-          {
-            "head": "paccheri alla spada",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "large tubes of pasta cooked with sword fish, white wine, aubergines, cherry tomatoes, garlic and a touch of tomato sauce, garnished with fresh mint"
-          },
-          {
-            "head": "paccheri segesta",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "large tubes of pasta cooked with king prawns, mascarpone cheese, pistachios, garlic and a touch of tomato sauce with a drop of brandy"
-          },
-          {
-            "head": "spaghetti scolglio",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "spaghetti cooked with mussles, prawns, scallops, calamari, white wine, cherry tomatoes and a touch of tomato sauce"
-          },
-          {
-            "head": "spaghetti alla tarantina",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "spaghetti cooked with mussles (shell off), white wine, garlic, chillies, a  touch of parsley and topped with bread crumbs and olive oil"
-          },
-          {
-            "head": "spaghetti carbonara",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "spaghetti with pancetta (bacon), egg yolks, parmesan cheese and cream"
-          },
-          {
-            "head": "spaghetti bolognese",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "spaghetti with traditional Italian Bolognese sauce"
-          },
-          {
-            "head": "lasagna",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "layers of pasta with Bolognese, béchamel and mozzarella cheese"
-          },
-          {
-            "head": "cannelloni",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "rolled crepe filled with Italian pork sausage, mascarpone, parmesan, mozzarella cheese, creamed peppers, oven baked with béchamel and tomato sauce"
-          },
-          {
-            "head": "tortelloni gorgonzola",
-            "vegetarian": true,
-            "price": 9.45,
-            "subhead": "",
-            "description": "pasta filled with ricotta and spinach cooked in gorgonzola cheese sauce"
-          },
-          {
-            "head": "penne primavera",
-            "vegetarian": true,
-            "price": 8.95,
-            "subhead": "",
-            "description": "penne cooked with mashed peas, garlic, shallots, mushrooms, spinach in a cream sauce"
-          },
-          {
-            "head": "penne arrabbiata",
-            "vegetarian": true,
-            "price": 8.95,
-            "subhead": "",
-            "description": "penne cooked with tomato sauce, garlic and chillies (add pepperoni for extra 95p)"
-          },
-          {
-            "head": "risotto agli asparagi",
-            "vegetarian": true,
-            "price": 9.45,
-            "subhead": "",
-            "description": "classical tossed Arborio rice with asparagus, garlic, shallots and a touch of white wine (add bacon for extra 95p)"
-          },
-          {
-            "head": "risotto marinara",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "classical tossed Arborio rice with mussels, prawns, calamari, scallops, and a touch of white wine with a touch of tomato sauce"
-          },
-          {
-            "head": "risotto zucchine e gamberi",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "classical tossed Arborio rice with mussels, prawns, courgette, garlic and white wine"
-          }
-        ]
-      },
-      {
-        "name": "pizza",
-        "menuItem": [
-          {
-            "head": "margherita",
-            "vegetarian": true,
-            "price": 7.95,
-            "subhead": "",
-            "description": "cheese and tomato"
-          },
-          {
-            "head": "romana",
-            "vegetarian": false,
-            "price": 8.95,
-            "subhead": "",
-            "description": "ham, cheese and tomato"
-          },
-          {
-            "head": "quallia gusti",
-            "vegetarian": false,
-            "price": 9.25,
-            "subhead": "",
-            "description": "ham, mushrooms, artichokes, olives, cheese and tomato"
-          },
-          {
-            "head": "diavola",
-            "vegetarian": false,
-            "price": 8.95,
-            "subhead": "",
-            "description": "pepperoni, chillies, cheese and tomato"
-          },
-          {
-            "head": "fonna e cipalle",
-            "vegetarian": false,
-            "price": 8.95,
-            "subhead": "",
-            "description": "tuna, red onions, cheese and tomato"
-          },
-          {
-            "head": "marinana",
-            "vegetarian": false,
-            "price": 10.95,
-            "subhead": "",
-            "description": "scallops, tuna, mussels, prawns, cheese and tomato"
-          },
-          {
-            "head": "fricolone",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "parma ham, rocket, parmesan shavings, cheese and tomato"
-          },
-          {
-            "head": "caesar",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "chicken, bacon, rocket salad, paresan shavingsg, caesar dressing, cheese and tomato"
-          },
-          {
-            "head": "salsiccia e palale",
-            "vegetarian": false,
-            "price": 9.25,
-            "subhead": "",
-            "description": "scilian sausage, roast potatoes, cheese and tomato"
-          },
-          {
-            "head": "tropicale",
-            "vegetarian": false,
-            "price": 9.25,
-            "subhead": "",
-            "description": "ham, pineapple, cheese and tomato"
-          },
-          {
-            "head": "salmone",
-            "vegetarian": false,
-            "price": 9.45,
-            "subhead": "",
-            "description": "salmon, cheese and tomato"
-          },
-          {
-            "head": "allegia",
-            "vegetarian": false,
-            "price": 9.95,
-            "subhead": "",
-            "description": "prawns, courgette, pistachios, cheese and tomato"
-          },
-          {
-            "head": "pala",
-            "vegetarian": true,
-            "price": 8.95,
-            "subhead": "",
-            "description": "chips, cheese and tomato"
-          },
-          {
-            "head": "parmiggiana",
-            "vegetarian": true,
-            "price": 9.25,
-            "subhead": "",
-            "description": "parmesan, rocket salad, aubgerine, cheese and tomato"
-          },
-          {
-            "head": "caprina",
-            "vegetarian": true,
-            "price": 9.25,
-            "subhead": "",
-            "description": "goat cheese, red peppers, caramelised onions, rocket, pesto, cheese and tomato"
-          },
-          {
-            "head": "siciliana",
-            "vegetarian": true,
-            "price": 9.25,
-            "subhead": "",
-            "description": "onions, capers, olives, chillies, garlic, cheese and tomato"
-          },
-          {
-            "head": "vegetariana",
-            "vegetarian": true,
-            "price": 9.45,
-            "subhead": "",
-            "description": "mushrooms, pepers, garlic artichokes, aubgerine, cheese and tomato"
-          }
-        ]
-      },
-      {
-        "name": "grills",
-        "menuItem": [
-          {
-            "head": "fillet steak",
-            "vegetarian": false,
-            "price": 21.95,
-            "subhead": "",
-            "description": "grilled to your choice, extra charge for the sauce of your choice (£2.00)"
-          },
-          {
-            "head": "serloin steak",
-            "vegetarian": false,
-            "price": 21.95,
-            "subhead": "",
-            "description": "grilled to your choice, extra charge for the sauce of your choice (£2.00)"
-          },
-          {
-            "head": "chicken breast",
-            "vegetarian": false,
-            "price": 14.95,
-            "subhead": "",
-            "description": "choose your sauce"
-          }
-        ]
-      },
-      {
-        "name": "fish",
-        "menuItem": [
-          {
-            "head": "spada siliano",
-            "vegetarian": false,
-            "price": 16.95,
-            "subhead": "",
-            "description": "grilled fresh sword fish on a bed of mashed aubergines, topped with pesto, served with steamed potatoes"
-          },
-          {
-            "head": "spigola e capesante",
-            "vegetarian": false,
-            "price": 19.95,
-            "subhead": "",
-            "description": "pan-fried fresh seabass with pan-fried scallops wrapped in parma ham  on a bed of spinach"
-          },
-          {
-            "head": "merlugga alla siciliana",
-            "vegetarian": false,
-            "price": 16.95,
-            "subhead": "",
-            "description": "pan-fried fresh cod cooked with cherry tomatoes, pine nuts, raisins, olives, capers, herbs and hite with, served with asparagus"
-          },
-          {
-            "head": "salmone al burra",
-            "vegetarian": false,
-            "price": 17.95,
-            "subhead": "",
-            "description": "pan-fried salmon served with mash potates, fresh and garlic butter"
-          },
-          {
-            "head": "spigola al sale",
-            "vegetarian": false,
-            "price": 17.95,
-            "subhead": "",
-            "description": "baked fresh seabass in crusty salt, served with steamed potatoes (takes no less than 20 minutes to cook)"
-          },
-          {
-            "head": "spigola al caitaccia",
-            "vegetarian": false,
-            "price": 17.95,
-            "subhead": "",
-            "description": "baked fresh seabass wrapped in a foil with garlic, shallots, cherry tomatoes, herbs and white wine, served steamed potatoes (takes no less than 20 minutes to cook)"
-          },
-          {
-            "head": "spigola al sale",
-            "vegetarian": false,
-            "price": 49.95,
-            "subhead": "",
-            "description": "grilled mixed fish (for 2 people), 2 seabass fillets, 2 pieces of sword fish, 4 king prawns, 4 king scallps, server with two sides of your choice"
-          }
-        ]
-      },
-      {
-        "name": "sides",
-        "menuItem": [
-          {
-            "head": "spinaci",
-            "vegetarian": true,
-            "price": 3.95,
-            "subhead": "",
-            "description": "pan-fried spinach"
-          },
-          {
-            "head": "fagiolini",
-            "vegetarian": true,
-            "price": 3.5,
-            "subhead": "",
-            "description": "pan-fried green beans with shallots"
-          },
-          {
-            "head": "aspanagi",
-            "vegetarian": true,
-            "price": 3.95,
-            "subhead": "",
-            "description": "steamed asparagus"
-          },
-          {
-            "head": "funghi frifalali",
-            "vegetarian": true,
-            "price": 3.95,
-            "subhead": "",
-            "description": "mushrooms sautéed in white wine with garlic"
-          },
-          {
-            "head": "pure di patate",
-            "vegetarian": true,
-            "price": 3.5,
-            "subhead": "",
-            "description": "mash potatoes"
-          },
-          {
-            "head": "patatine fritte",
-            "vegetarian": true,
-            "price": 3.5,
-            "subhead": "",
-            "description": "chips"
-          },
-          {
-            "head": "patate arrosto",
-            "vegetarian": true,
-            "price": 3.5,
-            "subhead": "",
-            "description": "roast potatoes"
-          },
-          {
-            "head": "insalata di rucola",
-            "vegetarian": true,
-            "price": 3.95,
-            "subhead": "",
-            "description": "rocket salad and parmesan shavings"
-          },
-          {
-            "head": "pomodri e cipolle",
-            "vegetarian": true,
-            "price": 3.5,
-            "subhead": "",
-            "description": "tomato and onion salad"
-          },
-          {
-            "head": "pomodri e cipolle",
-            "vegetarian": true,
-            "price": 3.95,
-            "subhead": "",
-            "description": "mixed leaf salad"
-          }
-        ]
-      },
-      {
-        "name": "meat dishes",
-        "menuItem": [
-          {
-            "head": "agnella ai funghi selisalici",
-            "vegetarian": false,
-            "price": 17.95,
-            "subhead": "",
-            "description": "rack of lamb cooked in red wine sauce with wild mushrooms, served on a bed of mash potatoes"
-          },
-          {
-            "head": "medaglioni di filetta in salsa diana",
-            "vegetarian": false,
-            "price": 19.95,
-            "subhead": "",
-            "description": "fillet steaks medallions cooked in diana sauce, served with roast potatoes"
-          },
-          {
-            "head": "pollo allegria",
-            "vegetarian": false,
-            "price": 15.95,
-            "subhead": "",
-            "description": "pan-fried chicken breast cooked with mushrooms, cheese, cream of peppers and a touch of pesto, served with roast potatoes"
-          },
-          {
-            "head": "fagliata i  manga (min 2 persons)",
-            "vegetarian": false,
-            "price": 34.95,
-            "subhead": "",
-            "description": "sliced beef (cooked medium-rare) on a bed of rocket salad, topped with parmesan shavings and reduced balsamic vinegar, served with chips"
-          }
-        ]
-      }
-    ]
-  }
+  "title": "Allegria Menu",
+  "created": "2020-03-27T00:00:00.000Z",
+  "last_updated": "2020-03-27T00:00:00.000Z",
+  "menuSection": [
+    {
+      "name": "starters and salads",
+      "menuItem": [
+        {
+          "head": "sicilian salad",
+          "vegetarian": false,
+          "price": 5.95,
+          "subhead": "",
+          "description": "cheese tomatoes, green beans, olives, capers, onions, boiled potatoes (add tuna for extra 95p)"
+        },
+        {
+          "head": "insalata fonna e fagioli",
+          "vegetarian": false,
+          "price": 6.95,
+          "subhead": "",
+          "description": "tuna, beans, red onions, cherry tomatoes, olive oil dressing"
+        },
+        {
+          "head": "insalata di salmone",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "salm,on, asparagus, boiled potatoes, cherry tomatoes, avocado, lemon dressing, balsamic sauce"
+        },
+        {
+          "head": "fritto misto",
+          "vegetarian": false,
+          "price": 14.95,
+          "subhead": "plate to share",
+          "description": "deep fried calarmi, king praws, scallops and cold, served with aioli sauce"
+        },
+        {
+          "head": "pate di salmone",
+          "vegetarian": false,
+          "price": 6.95,
+          "subhead": "",
+          "description": "home-made salmon pate, served with toasted bread"
+        },
+        {
+          "head": "bruschetta di mare",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "prawns and marie rose sauce, fresh crab meat and tomatoes, salmon pate, tuna, avocado, onions and lime"
+        },
+        {
+          "head": "bruschetta",
+          "vegetarian": true,
+          "price": 4.45,
+          "subhead": "",
+          "description": "toasted bread with fresh tomato, garlic, oregano, olive oil and basil"
+        },
+        {
+          "head": "gamberi alla fragola",
+          "vegetarian": false,
+          "price": 7.45,
+          "subhead": "",
+          "description": "prawns awith mayonnaise and strawberries on a bed of julienne (thin slices) of apples, served with fried bread"
+        },
+        {
+          "head": "cocktail di gamberi",
+          "vegetarian": false,
+          "price": 6.95,
+          "subhead": "",
+          "description": "classical prawn cocktail with a romaine lettuce and marie rose sauce"
+        },
+        {
+          "head": "gamberoni all grancia",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "king prawns cooked with brandy,  orange zest, garlic and butter"
+        },
+        {
+          "head": "funghi al formaggio",
+          "vegetarian": false,
+          "price": 6.45,
+          "subhead": "",
+          "description": "oyster, button and chestnut mushrooms cooked in cheese sauce, served with toasted bread"
+        },
+        {
+          "head": "calmari fritti",
+          "vegetarian": false,
+          "price": 6.45,
+          "subhead": "",
+          "description": "deep fried squid served on a bed of salad, served with tartar sauce"
+        },
+        {
+          "head": "pate di pollo",
+          "vegetarian": false,
+          "price": 5.95,
+          "subhead": "",
+          "description": "home-made chicken liver pate servd with toast and chutnet"
+        },
+        {
+          "head": "fregtini alla salvia",
+          "vegetarian": false,
+          "price": 6.65,
+          "subhead": "",
+          "description": "chicken livers cooked with onions, white wine, sage and demi-glace"
+        },
+        {
+          "head": "tricolore",
+          "vegetarian": false,
+          "price": 7.25,
+          "subhead": "",
+          "description": "fresh tomatoes, mozzarella, parma ham on a bed of rocket salad"
+        },
+        {
+          "head": "cozze crema",
+          "vegetarian": false,
+          "price": 6.95,
+          "subhead": "",
+          "description": "mussles in white wine, cream sauce with shallots, served with a toasted bread"
+        },
+        {
+          "head": "cozze marinara",
+          "vegetarian": false,
+          "price": 6.95,
+          "subhead": "",
+          "description": "mussles cooked in tomato sauce garlic and white wine, served with a fried bread"
+        },
+        {
+          "head": "zuppa del giorno",
+          "vegetarian": false,
+          "price": 4.95,
+          "subhead": "",
+          "description": "soup of the day served with home-made bread of the day"
+        },
+        {
+          "head": "capiese",
+          "vegetarian": true,
+          "price": 6.25,
+          "subhead": "",
+          "description": "fresh tomatoes, mozzarella served on a bed of rocket salad with fresh basil and olive oil"
+        },
+        {
+          "head": "invollino di salmone",
+          "vegetarian": false,
+          "price": 7.45,
+          "subhead": "",
+          "description": "smoked salmon rolled with prawns and marie rose sauce"
+        },
+        {
+          "head": "capesante al pioasciatto",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "pan-fried king scallops warpped in parma ham, srved on bed of mashed peas"
+        },
+        {
+          "head": "caeasar salad",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "classical ceaser sald with chicken home-made ceaser sauce"
+        },
+        {
+          "head": "insalata di mare",
+          "vegetarian": false,
+          "price": 8.95,
+          "subhead": "",
+          "description": "seafood salad made of prawns, mussles, calamari, onion, celery, carrots, caper, olives, garlic and oregano"
+        }
+      ]
+    },
+    {
+      "name": "garlic breads",
+      "menuItem": [
+        {
+          "head": "rosetta",
+          "vegetarian": false,
+          "price": 4.95,
+          "subhead": "",
+          "description": "rose shaped garlic bread filled with garlic, parmesan, cheese, parsley and oregano, served with a chilli sauce dip"
+        },
+        {
+          "head": "caprino",
+          "vegetarian": false,
+          "price": 4.65,
+          "subhead": "",
+          "description": "garlic bread with gaots cheese and caramelised onions"
+        },
+        {
+          "head": "siciliana",
+          "vegetarian": false,
+          "price": 4.55,
+          "subhead": "",
+          "description": "garlic bread with tomato, oregano, parmesan and achovies"
+        },
+        {
+          "head": "plain",
+          "vegetarian": false,
+          "price": 3.95,
+          "subhead": "",
+          "description": "garlic bread with salt, rosemary and oregano"
+        },
+        {
+          "head": "cheese",
+          "vegetarian": false,
+          "price": 4.65,
+          "subhead": "",
+          "description": "garlic bread with mozzarella cheese and oregano"
+        },
+        {
+          "head": "tomata",
+          "vegetarian": false,
+          "price": 4.25,
+          "subhead": "",
+          "description": "garlic bread with tomato, oregano and parsley"
+        },
+        {
+          "head": "calabrese",
+          "vegetarian": false,
+          "price": 4.35,
+          "subhead": "",
+          "description": "garlic bread with tomato, oregano, red onion and fresh chillies"
+        },
+        {
+          "head": "pizzella frilla",
+          "vegetarian": false,
+          "price": 5.45,
+          "subhead": "",
+          "description": "fried pizza topped with fresh tomatoes, a touch of peseto and parmesan shavings"
+        }
+      ]
+    },
+    {
+      "name": "pasta e risotti",
+      "menuItem": [
+        {
+          "head": "paccheri mediterrani",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "large tubes of pasta cooked with seabass, white wine, garlic, pistachios, cherry tomoes and a touch of tomato sauce"
+        },
+        {
+          "head": "paccheri alla Siciliana",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "large tubes of pasta cooked with Sicilian sausage, broccoli, raisins, pine nuts, garlic and fennel seeds topped with spicy bread crumbs"
+        },
+        {
+          "head": "goncchi al pesto",
+          "vegetarian": true,
+          "price": 8.95,
+          "subhead": "",
+          "description": "potato dumplings in home-made pesto sauce"
+        },
+        {
+          "head": "spaghetti alla polpa di granchio",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "spaghetti with crab meat, garlic, a touch of white wine and chillies"
+        },
+        {
+          "head": "paccheri alla spada",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "large tubes of pasta cooked with sword fish, white wine, aubergines, cherry tomatoes, garlic and a touch of tomato sauce, garnished with fresh mint"
+        },
+        {
+          "head": "paccheri segesta",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "large tubes of pasta cooked with king prawns, mascarpone cheese, pistachios, garlic and a touch of tomato sauce with a drop of brandy"
+        },
+        {
+          "head": "spaghetti scolglio",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "spaghetti cooked with mussles, prawns, scallops, calamari, white wine, cherry tomatoes and a touch of tomato sauce"
+        },
+        {
+          "head": "spaghetti alla tarantina",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "spaghetti cooked with mussles (shell off), white wine, garlic, chillies, a  touch of parsley and topped with bread crumbs and olive oil"
+        },
+        {
+          "head": "spaghetti carbonara",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "spaghetti with pancetta (bacon), egg yolks, parmesan cheese and cream"
+        },
+        {
+          "head": "spaghetti bolognese",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "spaghetti with traditional Italian Bolognese sauce"
+        },
+        {
+          "head": "lasagna",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "layers of pasta with Bolognese, béchamel and mozzarella cheese"
+        },
+        {
+          "head": "cannelloni",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "rolled crepe filled with Italian pork sausage, mascarpone, parmesan, mozzarella cheese, creamed peppers, oven baked with béchamel and tomato sauce"
+        },
+        {
+          "head": "tortelloni gorgonzola",
+          "vegetarian": true,
+          "price": 9.45,
+          "subhead": "",
+          "description": "pasta filled with ricotta and spinach cooked in gorgonzola cheese sauce"
+        },
+        {
+          "head": "penne primavera",
+          "vegetarian": true,
+          "price": 8.95,
+          "subhead": "",
+          "description": "penne cooked with mashed peas, garlic, shallots, mushrooms, spinach in a cream sauce"
+        },
+        {
+          "head": "penne arrabbiata",
+          "vegetarian": true,
+          "price": 8.95,
+          "subhead": "",
+          "description": "penne cooked with tomato sauce, garlic and chillies (add pepperoni for extra 95p)"
+        },
+        {
+          "head": "risotto agli asparagi",
+          "vegetarian": true,
+          "price": 9.45,
+          "subhead": "",
+          "description": "classical tossed Arborio rice with asparagus, garlic, shallots and a touch of white wine (add bacon for extra 95p)"
+        },
+        {
+          "head": "risotto marinara",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "classical tossed Arborio rice with mussels, prawns, calamari, scallops, and a touch of white wine with a touch of tomato sauce"
+        },
+        {
+          "head": "risotto zucchine e gamberi",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "classical tossed Arborio rice with mussels, prawns, courgette, garlic and white wine"
+        }
+      ]
+    },
+    {
+      "name": "pizza",
+      "menuItem": [
+        {
+          "head": "margherita",
+          "vegetarian": true,
+          "price": 7.95,
+          "subhead": "",
+          "description": "cheese and tomato"
+        },
+        {
+          "head": "romana",
+          "vegetarian": false,
+          "price": 8.95,
+          "subhead": "",
+          "description": "ham, cheese and tomato"
+        },
+        {
+          "head": "quallia gusti",
+          "vegetarian": false,
+          "price": 9.25,
+          "subhead": "",
+          "description": "ham, mushrooms, artichokes, olives, cheese and tomato"
+        },
+        {
+          "head": "diavola",
+          "vegetarian": false,
+          "price": 8.95,
+          "subhead": "",
+          "description": "pepperoni, chillies, cheese and tomato"
+        },
+        {
+          "head": "fonna e cipalle",
+          "vegetarian": false,
+          "price": 8.95,
+          "subhead": "",
+          "description": "tuna, red onions, cheese and tomato"
+        },
+        {
+          "head": "marinana",
+          "vegetarian": false,
+          "price": 10.95,
+          "subhead": "",
+          "description": "scallops, tuna, mussels, prawns, cheese and tomato"
+        },
+        {
+          "head": "fricolone",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "parma ham, rocket, parmesan shavings, cheese and tomato"
+        },
+        {
+          "head": "caesar",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "chicken, bacon, rocket salad, paresan shavingsg, caesar dressing, cheese and tomato"
+        },
+        {
+          "head": "salsiccia e palale",
+          "vegetarian": false,
+          "price": 9.25,
+          "subhead": "",
+          "description": "scilian sausage, roast potatoes, cheese and tomato"
+        },
+        {
+          "head": "tropicale",
+          "vegetarian": false,
+          "price": 9.25,
+          "subhead": "",
+          "description": "ham, pineapple, cheese and tomato"
+        },
+        {
+          "head": "salmone",
+          "vegetarian": false,
+          "price": 9.45,
+          "subhead": "",
+          "description": "salmon, cheese and tomato"
+        },
+        {
+          "head": "allegia",
+          "vegetarian": false,
+          "price": 9.95,
+          "subhead": "",
+          "description": "prawns, courgette, pistachios, cheese and tomato"
+        },
+        {
+          "head": "pala",
+          "vegetarian": true,
+          "price": 8.95,
+          "subhead": "",
+          "description": "chips, cheese and tomato"
+        },
+        {
+          "head": "parmiggiana",
+          "vegetarian": true,
+          "price": 9.25,
+          "subhead": "",
+          "description": "parmesan, rocket salad, aubgerine, cheese and tomato"
+        },
+        {
+          "head": "caprina",
+          "vegetarian": true,
+          "price": 9.25,
+          "subhead": "",
+          "description": "goat cheese, red peppers, caramelised onions, rocket, pesto, cheese and tomato"
+        },
+        {
+          "head": "siciliana",
+          "vegetarian": true,
+          "price": 9.25,
+          "subhead": "",
+          "description": "onions, capers, olives, chillies, garlic, cheese and tomato"
+        },
+        {
+          "head": "vegetariana",
+          "vegetarian": true,
+          "price": 9.45,
+          "subhead": "",
+          "description": "mushrooms, pepers, garlic artichokes, aubgerine, cheese and tomato"
+        }
+      ]
+    },
+    {
+      "name": "grills",
+      "menuItem": [
+        {
+          "head": "fillet steak",
+          "vegetarian": false,
+          "price": 21.95,
+          "subhead": "",
+          "description": "grilled to your choice, extra charge for the sauce of your choice (£2.00)"
+        },
+        {
+          "head": "serloin steak",
+          "vegetarian": false,
+          "price": 21.95,
+          "subhead": "",
+          "description": "grilled to your choice, extra charge for the sauce of your choice (£2.00)"
+        },
+        {
+          "head": "chicken breast",
+          "vegetarian": false,
+          "price": 14.95,
+          "subhead": "",
+          "description": "choose your sauce"
+        }
+      ]
+    },
+    {
+      "name": "fish",
+      "menuItem": [
+        {
+          "head": "spada siliano",
+          "vegetarian": false,
+          "price": 16.95,
+          "subhead": "",
+          "description": "grilled fresh sword fish on a bed of mashed aubergines, topped with pesto, served with steamed potatoes"
+        },
+        {
+          "head": "spigola e capesante",
+          "vegetarian": false,
+          "price": 19.95,
+          "subhead": "",
+          "description": "pan-fried fresh seabass with pan-fried scallops wrapped in parma ham  on a bed of spinach"
+        },
+        {
+          "head": "merlugga alla siciliana",
+          "vegetarian": false,
+          "price": 16.95,
+          "subhead": "",
+          "description": "pan-fried fresh cod cooked with cherry tomatoes, pine nuts, raisins, olives, capers, herbs and hite with, served with asparagus"
+        },
+        {
+          "head": "salmone al burra",
+          "vegetarian": false,
+          "price": 17.95,
+          "subhead": "",
+          "description": "pan-fried salmon served with mash potates, fresh and garlic butter"
+        },
+        {
+          "head": "spigola al sale",
+          "vegetarian": false,
+          "price": 17.95,
+          "subhead": "",
+          "description": "baked fresh seabass in crusty salt, served with steamed potatoes (takes no less than 20 minutes to cook)"
+        },
+        {
+          "head": "spigola al caitaccia",
+          "vegetarian": false,
+          "price": 17.95,
+          "subhead": "",
+          "description": "baked fresh seabass wrapped in a foil with garlic, shallots, cherry tomatoes, herbs and white wine, served steamed potatoes (takes no less than 20 minutes to cook)"
+        },
+        {
+          "head": "spigola al sale",
+          "vegetarian": false,
+          "price": 49.95,
+          "subhead": "",
+          "description": "grilled mixed fish (for 2 people), 2 seabass fillets, 2 pieces of sword fish, 4 king prawns, 4 king scallps, server with two sides of your choice"
+        }
+      ]
+    },
+    {
+      "name": "sides",
+      "menuItem": [
+        {
+          "head": "spinaci",
+          "vegetarian": true,
+          "price": 3.95,
+          "subhead": "",
+          "description": "pan-fried spinach"
+        },
+        {
+          "head": "fagiolini",
+          "vegetarian": true,
+          "price": 3.5,
+          "subhead": "",
+          "description": "pan-fried green beans with shallots"
+        },
+        {
+          "head": "aspanagi",
+          "vegetarian": true,
+          "price": 3.95,
+          "subhead": "",
+          "description": "steamed asparagus"
+        },
+        {
+          "head": "funghi frifalali",
+          "vegetarian": true,
+          "price": 3.95,
+          "subhead": "",
+          "description": "mushrooms sautéed in white wine with garlic"
+        },
+        {
+          "head": "pure di patate",
+          "vegetarian": true,
+          "price": 3.5,
+          "subhead": "",
+          "description": "mash potatoes"
+        },
+        {
+          "head": "patatine fritte",
+          "vegetarian": true,
+          "price": 3.5,
+          "subhead": "",
+          "description": "chips"
+        },
+        {
+          "head": "patate arrosto",
+          "vegetarian": true,
+          "price": 3.5,
+          "subhead": "",
+          "description": "roast potatoes"
+        },
+        {
+          "head": "insalata di rucola",
+          "vegetarian": true,
+          "price": 3.95,
+          "subhead": "",
+          "description": "rocket salad and parmesan shavings"
+        },
+        {
+          "head": "pomodri e cipolle",
+          "vegetarian": true,
+          "price": 3.5,
+          "subhead": "",
+          "description": "tomato and onion salad"
+        },
+        {
+          "head": "pomodri e cipolle",
+          "vegetarian": true,
+          "price": 3.95,
+          "subhead": "",
+          "description": "mixed leaf salad"
+        }
+      ]
+    },
+    {
+      "name": "meat dishes",
+      "menuItem": [
+        {
+          "head": "agnella ai funghi selisalici",
+          "vegetarian": false,
+          "price": 17.95,
+          "subhead": "",
+          "description": "rack of lamb cooked in red wine sauce with wild mushrooms, served on a bed of mash potatoes"
+        },
+        {
+          "head": "medaglioni di filetta in salsa diana",
+          "vegetarian": false,
+          "price": 19.95,
+          "subhead": "",
+          "description": "fillet steaks medallions cooked in diana sauce, served with roast potatoes"
+        },
+        {
+          "head": "pollo allegria",
+          "vegetarian": false,
+          "price": 15.95,
+          "subhead": "",
+          "description": "pan-fried chicken breast cooked with mushrooms, cheese, cream of peppers and a touch of pesto, served with roast potatoes"
+        },
+        {
+          "head": "fagliata i  manga (min 2 persons)",
+          "vegetarian": false,
+          "price": 34.95,
+          "subhead": "",
+          "description": "sliced beef (cooked medium-rare) on a bed of rocket salad, topped with parmesan shavings and reduced balsamic vinegar, served with chips"
+        }
+      ]
+    }
+  ]
 }
