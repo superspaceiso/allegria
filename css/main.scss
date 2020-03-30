@@ -58,13 +58,6 @@ body{
   @include fontSize(16px);
 }
 
-p.price{
-  margin: 0;
-  text-align: right;
-  @include fontSize(18px);
-  @include font-weight(semi-bold)
-}
-
 h1, h2, h3, h4{
   margin: 0;
   @include font-weight(bold);
@@ -237,13 +230,29 @@ section{
 
 .header{
   text-align: center;
+  text-transform: capitalize;
 }
 
 .subHeader{
   text-align: center;
+  text-transform: capitalize;
+  padding: 10px 0 10px 0;
 }
 
 .menuWrapper{
+  display: grid;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  @media screen and (max-width: $mobileContainer) {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
+}
+
+.contactWrapper{
   display: grid;
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
@@ -261,13 +270,26 @@ section{
 }
 
 .menuItem{
-  border-top: 1px solid $bodyText;
+  border-top: 1px solid #707070;
   padding: 10px;
 }
 
 .menuItemWrapper{
   display: grid;
   grid-template-columns: 80fr 20fr;
+
+  .menuItemPrice p{
+    margin: 0;
+    text-align: right;
+    @include fontSize(18px);
+    @include font-weight(semi-bold)
+  }
+
+  .menuItemDescription p{
+
+  }
+
+
 }
 
 .offers{
