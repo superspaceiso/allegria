@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   request.onload = function() {
     const menu = request.response;
-    console.log(menu);
+    //console.log(menu);
 
     const section = menu['menuSection'];
 
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
         let name = menuItem.head;
         let vegetarian = menuItem.vegetarian;
-        let price = "\u00A3" + menuItem.price;
-        let subHeading = menuItem.subhead;
+        let price = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(menuItem.price);
+        //let subHeading = menuItem.subhead;
         let description = menuItem.description;
 
-        if(vegetarian){
+/*        if(vegetarian){
           console.log(name);
-        }
+        }*/
 
         //Create menu item div
         let itemDiv = document.createElement("div");
@@ -126,6 +126,26 @@ document.addEventListener("DOMContentLoaded", function(){
           getMenuItemDescription[i].appendChild(menuItemDescription);
         }
       });
+
     });
+
+    //Create allergens notice div
+    let allergensDiv = document.createElement("div");
+    allergensDiv.setAttribute("id", "menuFooter");
+
+    let mainDiv = document.getElementById("menuDiv");
+    mainDiv.appendChild(allergensDiv);
+
+    let allergensHead = document.createElement("h4");
+    let allergensHeadText = document.createTextNode("Important Notice - Allergens");
+    allergensHead.appendChild(allergensHeadText);
+
+    let allergensDivP = document.createElement("p");
+    let allergensDivPText = document.createTextNode("Please be advised despite our best efforts we cannot guarantee that our food is free from traces of, or free from environmental contaminations of allergens. (Including cereals containing gluten, peanuts, nuts, milk, soya, mustard, lupin, eggs, fish, crustaceans, molluscs, sesame seeds, celery, sulphur dioxide)");
+    allergensDivP.appendChild(allergensDivPText);
+
+    allergensDiv.appendChild(allergensHead);
+    allergensDiv.appendChild(allergensDivP);
+
   }
 });

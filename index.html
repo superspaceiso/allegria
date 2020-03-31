@@ -64,6 +64,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -93,7 +94,7 @@
       <li class="item"><a href="#menu">Menu</a></li>
       <li class="item"><a href="#offers">Offers</a></li>
       <li class="item"><a href="#find-us">Find Us</a></li>
-<!--      <li class="item"><a href="#contact">Contact</a>-->
+      <li class="item"><a href="#reservations">Reservations</a>
       </li>
       <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
@@ -114,51 +115,6 @@
         <h2 id="menu">Menu</h2>
       </div>
     </section>
- <!--   <section>
-      <div class="header">
-        <h2 id="menu">Menu</h2>
-      </div>
-      <div class="subHeader">
-        <h3>Starters</h3>
-      </div>
-      <div class="menuWrapper">
-        <div class="menuItem">
-          <div class="menuItemWrapper">
-            <div>
-              <h4>Pizza</h4>
-            </div>
-            <div>
-              <p class="price">£9.99</p>
-            </div>
-            <div>
-              <p></p>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
-        </div>
-        <div class="menuItem">
-          <div class="menuItemWrapper">
-            <div>
-              <h4>Pizza</h4>
-            </div>
-            <div>
-              <p class="price">£9.99</p>
-            </div>
-            <div>
-              <p></p>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-      <div class="menuFooter">
-        <h4>Important Notice - Allergens</h4>
-        <p>Please be advised despite our best efforts we cannot guarantee that our food is free from traces of, or free from environmental contaminations of allergens.<br>
-          (Including cereals containing gluten, peanuts, nuts, milk, soya, mustard, lupin, eggs, fish, crustaceans, molluscs, sesame seeds, celery, sulphur dioxide)</p>
-      </div>
-    </section>-->
 
     <section>
       <div class="header">
@@ -199,6 +155,56 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="header">
+        <h2 id="reservations">Reservations</h2>
+      </div>
+      <form id="reservationForm" action="">
+        <div>
+          <h4>Book A Table</h4>
+        </div>
+        <div class="reservationWrapper">
+            <div>
+              <label for="date">Date:</label><br>
+              <input type="date" id="date" name="date" required><br>
+            </div>
+            <div>
+              <label for="time">Time:</label><br>
+              <input type="time" id="time" name="time" required><br>
+            </div>
+            <div>
+              <label for="party">Party Size:</label><br>
+              <input type="number" id="party" name="party" min="1" value="1" required><br>
+            </div>
+        </div>
+        <div>
+          <h4>Contact Details</h4>
+        </div>
+        <div class="reservationWrapper">
+            <div>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br>
+            </div>
+            <div>
+              <label for="tel">Telephone Number:</label><br>
+              <input type="tel" id="tel" name="tel" minlength="5" required><br>
+            </div>
+            <div>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br>
+            </div>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" rows="4" cols="50">
+          </textarea>
+        </div>
+        <div>
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </section>
   </div>
   <footer>
     <div class="container">
@@ -210,21 +216,10 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/restaurantMenu.js"></script>
+  <script src="js/formHandler.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.min.css"></script>
-  <script>
-    $(function() {
-      $(".toggle").on("click", function() {
-        if ($(".item").hasClass("active")) {
-          $(".item").removeClass("active");
-          $(this).find("a").html("<i class='fas fa-bars'></i>");
-        } else {
-          $(".item").addClass("active");
-          $(this).find("a").html("<i class='fas fa-bars'></i>");
-        }
-      });
-    });
-  </script>
+  <script  src="js/navMenu.js"></script>
 
 </body>
 

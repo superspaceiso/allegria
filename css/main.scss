@@ -265,7 +265,20 @@ section{
   }
 }
 
-.menuFooter{
+.reservationWrapper{
+  display: grid;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  @media screen and (max-width: $mobileContainer) {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
+}
+
+#menuFooter{
   text-align: center;
 }
 
@@ -284,12 +297,6 @@ section{
     @include fontSize(18px);
     @include font-weight(semi-bold)
   }
-
-  .menuItemDescription p{
-
-  }
-
-
 }
 
 .offers{
@@ -333,6 +340,50 @@ p.offersFooter{
   padding: 0.15em 0.15em 0 0;
   &:hover{
     color: $allegriaGreen;
+  }
+}
+
+#reservationForm {
+  h4 {
+    padding: 10px 0 5px 0;
+  }
+
+  label {
+    display: inline-block;
+    padding: 5px 0 5px 0;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    border: 1px solid black;
+  }
+
+  button {
+    background-color: white;
+    padding: 13px 50px 10px 50px;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: $allegriaGreen;
+      border: 1px solid $allegriaGreen;
+      color: white;
+      transition: 1000ms;
+    }
   }
 }
 
