@@ -96,6 +96,8 @@ p.offersFooter { font-weight: 700; }
 #reservationForm button { background-color: white; padding: 13px 50px 10px 50px; margin-top: 10px; color: black; border: 1px solid black; }
 #reservationForm button:hover { background-color: #3A8278; border: 1px solid #3A8278; color: white; transition: 1000ms; }
 
+#notification { display: none; padding: 15px; text-align: center; color: white; }
+
 footer { min-height: 30px; padding-top: 20px; background-color: #ffffff; text-align: center; }
 footer p { margin: 0; }
 

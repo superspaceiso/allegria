@@ -9,7 +9,7 @@
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "image": [
-        "https//allegria.ltd/img/allegria_logo.png",
+        "https//allegria.ltd/img/allegria_logo.png"
       ],
       "@id": "https://allegria.ltd",
       "name": "Allegria",
@@ -102,6 +102,8 @@
   </div>
   </header>
 
+
+
   <header class="siteBanner">
     <div class="container">
       <div class="bannerText">
@@ -160,7 +162,8 @@
       <div class="header">
         <h2 id="reservations">Reservations</h2>
       </div>
-      <form id="reservationForm" action="">
+      <div id="notification"></div>
+      <form id="reservationForm" name="reservationForm">
         <div>
           <h4>Book A Table</h4>
         </div>
@@ -175,7 +178,7 @@
             </div>
             <div>
               <label for="party">Party Size:</label><br>
-              <input type="number" id="party" name="party" min="1" value="1" required><br>
+              <input type="number" id="party" name="party" min="1" max="100" value="1" required><br>
             </div>
         </div>
         <div>
@@ -206,6 +209,7 @@
       </form>
     </section>
   </div>
+
   <footer>
     <div class="container">
       <p>Allegria Restaurant Limited is a company registered in England and Wales with company number 10539485</p>
