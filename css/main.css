@@ -51,9 +51,9 @@ nav .item.active { display: block; }
 section { padding: 30px; margin-top: 30px; background-color: #ffffff; }
 section:last-child { margin-bottom: 30px; }
 
-.header { text-align: center; text-transform: capitalize; padding: 10px 0 10px 0; }
+.header { text-align: center; padding: 10px 0 10px 0; }
 
-.subHeader { text-align: center; text-transform: capitalize; padding: 10px 0 10px 0; }
+.subHeader { text-align: center; padding: 10px 0 10px 0; }
 
 .menuWrapper { display: grid; }
 @media screen and (min-width: 800px) { .menuWrapper { grid-template-columns: 1fr 1fr; column-gap: 2rem; } }
