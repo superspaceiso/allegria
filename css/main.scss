@@ -1,5 +1,4 @@
 $allegriaGold: #BC9F73;
-//$allegriaGreen: #4BA99C;
 $allegriaGreen: #3A8278;
 $bodyText: #000000;
 $font: 'Overpass', sans-serif;
@@ -66,7 +65,7 @@ h1, h2, h3, h4{
 h1 {
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px #000000;
   @include fontSize(28px);
   @media screen and (max-width: 400px) {
     @include fontSize(24px);
@@ -130,8 +129,7 @@ nav {
 
     &:hover {
       color: $allegriaGreen;
-      border-bottom: 2px solid $allegriaGreen;
-    }
+      border-bottom: 2px solid $allegriaGreen;}
   }
 
   .menu li {
@@ -231,6 +229,7 @@ section{
 .header{
   text-align: center;
   text-transform: capitalize;
+  padding: 10px 0 10px 0;
 }
 
 .subHeader{
@@ -336,7 +335,7 @@ p.offersFooter{
 }
 
 .icons{
-  color: black;
+  color: #000000;
   padding: 0.15em 0.15em 0 0;
   &:hover{
     color: $allegriaGreen;
@@ -356,7 +355,7 @@ p.offersFooter{
   input {
     width: 100%;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 10px;
     box-sizing: border-box;
 
@@ -368,14 +367,14 @@ p.offersFooter{
     padding: 10px;
     box-sizing: border-box;
     resize: none;
-    border: 1px solid black;
+    border: 1px solid #000000;
   }
 
   button {
     background-color: white;
     padding: 13px 50px 10px 50px;
     margin-top: 10px;
-    color: black;
+    color: #000000;
     border: 1px solid black;
 
     &:hover {
@@ -393,7 +392,6 @@ p.offersFooter{
   text-align: center;
   color: white;
 }
-
 
 footer{
   min-height: 30px;

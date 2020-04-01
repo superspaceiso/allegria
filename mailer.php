@@ -19,7 +19,7 @@ class MailScript
   private $message_content;
 
   private $forward_email = 'scott@scottcottam.co.uk';
-  private $subject = 'Reservation Quest';
+  private $subject = 'Reservation Request';
 
   public function __construct($date, $time, $party_size, $name, $phone_no, $email, $message_content)
   {

@@ -4,7 +4,7 @@ body { font-family: "Overpass", sans-serif; color: #000000; background-color: #B
 
 h1, h2, h3, h4 { margin: 0; font-weight: 700; }
 
-h1 { color: white; text-align: center; text-shadow: 2px 2px 2px black; font-size: 1.75rem; }
+h1 { color: white; text-align: center; text-shadow: 2px 2px 2px #000000; font-size: 1.75rem; }
 @media screen and (max-width: 400px) { h1 { font-size: 1.5rem; } }
 
 h2 { font-size: 2.5rem; }
@@ -51,7 +51,7 @@ nav .item.active { display: block; }
 section { padding: 30px; margin-top: 30px; background-color: #ffffff; }
 section:last-child { margin-bottom: 30px; }
 
-.header { text-align: center; text-transform: capitalize; }
+.header { text-align: center; text-transform: capitalize; padding: 10px 0 10px 0; }
 
 .subHeader { text-align: center; text-transform: capitalize; padding: 10px 0 10px 0; }
 
@@ -86,14 +86,14 @@ p.offersFooter { font-weight: 700; }
 .contactList li { padding-bottom: 10px; }
 .contactList li:nth-child(odd) { color: #3A8278; font-size: 1.125rem; font-weight: 700; }
 
-.icons { color: black; padding: 0.15em 0.15em 0 0; }
+.icons { color: #000000; padding: 0.15em 0.15em 0 0; }
 .icons:hover { color: #3A8278; }
 
 #reservationForm h4 { padding: 10px 0 5px 0; }
 #reservationForm label { display: inline-block; padding: 5px 0 5px 0; }
-#reservationForm input { width: 100%; height: 40px; border: 1px solid black; padding: 10px; box-sizing: border-box; }
-#reservationForm textarea { width: 100%; height: 150px; padding: 10px; box-sizing: border-box; resize: none; border: 1px solid black; }
-#reservationForm button { background-color: white; padding: 13px 50px 10px 50px; margin-top: 10px; color: black; border: 1px solid black; }
+#reservationForm input { width: 100%; height: 40px; border: 1px solid #000000; padding: 10px; box-sizing: border-box; }
+#reservationForm textarea { width: 100%; height: 150px; padding: 10px; box-sizing: border-box; resize: none; border: 1px solid #000000; }
+#reservationForm button { background-color: white; padding: 13px 50px 10px 50px; margin-top: 10px; color: #000000; border: 1px solid black; }
 #reservationForm button:hover { background-color: #3A8278; border: 1px solid #3A8278; color: white; transition: 1000ms; }
 
 #notification { display: none; padding: 15px; text-align: center; color: white; }

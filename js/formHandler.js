@@ -52,27 +52,39 @@ document.addEventListener("DOMContentLoaded", function() {
         case 200:
           const notification200 = document.createTextNode("Message sent, we'll get back to you as soon as possible to confirm your reservation.");
           notificationText.appendChild(notification200);
-          notification.appendChild(notification200);
+          if (!(notification.hasChildNodes())) {
+            notification.appendChild(notification200);
+          }
+          notification.style.display = "block";
           notification.style.backgroundColor = "#3A8278";
+          setTimeout(function(){notification.style.display = "none"; }, 10000);
           break;
         case 400:
-          const notification400 = document.createTextNode("Message was not sent please contact us directly through email or by telephone.");
+          const notification400 = document.createTextNode("Message was unable to be sent please contact us directly through email or by telephone.");
           notificationText.appendChild(notification400);
-          notification.appendChild(notification400);
+          if (!(notification.hasChildNodes())) {
+            notification.appendChild(notification400);
+          }
           notification.style.display = "block";
-          notification.style.backgroundColor = "#f00";
+          notification.style.backgroundColor = "#f70000";
+          setTimeout(function(){notification.style.display = "none"; }, 10000);
           break;
         case 500:
-          const notification500 = document.createTextNode("Message was not sent please contact us through email or by telephone.");
+          const notification500 = document.createTextNode("Message was unable to be sent please contact us through email or by telephone.");
           notificationText.appendChild(notification500);
-          notification.appendChild(notification500);
+          if (!(notification.hasChildNodes())) {
+            notification.appendChild(notification500);
+          }
           notification.style.display = "block";
-          notification.style.backgroundColor = "#f00";
+          notification.style.backgroundColor = "#f70000";
+          setTimeout(function(){notification.style.display = "none"; }, 10000);
           break;
       }
     };
 
     request.open("POST", "mailer.php");
     request.send(data);
+    reservationForm.reset();
+    dateSelector.value = todaysDate;
   });
 });
