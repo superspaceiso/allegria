@@ -8,6 +8,7 @@ $phone_no = $_POST['tel'];
 $email = $_POST['email'];
 $message_content = $_POST['message'];
 
+
 class MailScript
 {
   private $date;
@@ -21,7 +22,7 @@ class MailScript
   private $forward_email = 'scott@scottcottam.co.uk';
   private $subject = 'Reservation Request';
 
-  public function __construct($date, $time, $party_size, $name, $phone_no, $email, $message_content)
+  public function __construct($date, $time, $party_size, $name, $phone_no, $email, $message_content = NULL)
   {
     $covert_date = new DateTime($date);
     $this->date = $covert_date->format('d/m/Y');
@@ -66,7 +67,13 @@ class MailScript
 
   public function __destruct()
   {
-    mail($this->forward_email, $this->subject, $this->createMessage(), $this->createHeaders());
+    $mail = mail($this->forward_email, $this->subject, $this->createMessage(), $this->createHeaders());
+
+    if(!$mail)
+    {
+      http_response_code(500);
+    }
+
   }
 }
 

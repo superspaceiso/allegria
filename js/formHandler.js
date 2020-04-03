@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           notification.style.display = "block";
           notification.style.backgroundColor = "#3A8278";
-          setTimeout(function(){notification.style.display = "none"; }, 10000);
+          setTimeout(function(){notification.style.display = "none"; }, 30000);
           break;
         case 400:
           const notification400 = document.createTextNode("Message was unable to be sent please contact us directly through email or by telephone.");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           notification.style.display = "block";
           notification.style.backgroundColor = "#f70000";
-          setTimeout(function(){notification.style.display = "none"; }, 10000);
+          setTimeout(function(){notification.style.display = "none"; }, 30000);
           break;
         case 500:
           const notification500 = document.createTextNode("Message was unable to be sent please contact us through email or by telephone.");
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           notification.style.display = "block";
           notification.style.backgroundColor = "#f70000";
-          setTimeout(function(){notification.style.display = "none"; }, 10000);
+          setTimeout(function(){notification.style.display = "none"; }, 30000);
           break;
       }
     };

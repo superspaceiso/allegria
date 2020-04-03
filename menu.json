@@ -1,7 +1,7 @@
 {
   "title": "Allegria Menu",
   "created": "2020-03-27T00:00:00.000Z",
-  "last_updated": "2020-03-27T00:00:00.000Z",
+  "last_updated": "2020-04-03T00:00:00.000Z",
   "menuSection": [
     {
       "name": "Starters and Salads",
@@ -56,105 +56,105 @@
           "description": "Toasted bread with fresh tomato, garlic, oregano, olive oil and basil."
         },
         {
-          "head": "gamberi alla fragola",
+          "head": "Gamberi alla Fragola",
           "vegetarian": false,
           "price": 7.45,
           "subhead": "",
-          "description": "Prawns awith mayonnaise and strawberries on a bed of julienne (thin slices) of apples, served with fried bread."
+          "description": "Prawns with mayonnaise and strawberries on a bed of julienne (thin slices) of apples, served with fried bread."
         },
         {
-          "head": "cocktail di gamberi",
+          "head": "Cocktail di Gamberi",
           "vegetarian": false,
           "price": 6.95,
           "subhead": "",
           "description": "Classical prawn cocktail with a romaine lettuce and marie rose sauce."
         },
         {
-          "head": "gamberoni all grancia",
+          "head": "Gamberoni alla Grancia",
           "vegetarian": false,
           "price": 9.95,
           "subhead": "",
-          "description": "King prawns cooked with brandy,  orange zest, garlic and butter."
+          "description": "King prawns cooked with brandy, orange zest, garlic and butter."
         },
         {
-          "head": "funghi al formaggio",
+          "head": "Funghi al Formaggio",
           "vegetarian": false,
           "price": 6.45,
           "subhead": "",
           "description": "Oyster, button and chestnut mushrooms cooked in cheese sauce, served with toasted bread."
         },
         {
-          "head": "calmari fritti",
+          "head": "Calamari Fritti",
           "vegetarian": false,
           "price": 6.45,
           "subhead": "",
           "description": "Deep fried squid served on a bed of salad, served with tartar sauce."
         },
         {
-          "head": "pate di pollo",
+          "head": "Pate di Pollo",
           "vegetarian": false,
           "price": 5.95,
           "subhead": "",
           "description": "Home-made chicken liver pate served with toast and chutney."
         },
         {
-          "head": "fregtini alla salvia",
+          "head": "Fegatini alla Salvia",
           "vegetarian": false,
           "price": 6.65,
           "subhead": "",
           "description": "Chicken livers cooked with onions, white wine, sage and demi-glace."
         },
         {
-          "head": "tricolore",
+          "head": "Tricolore",
           "vegetarian": false,
           "price": 7.25,
           "subhead": "",
           "description": "Fresh tomatoes, mozzarella, parma ham on a bed of rocket salad."
         },
         {
-          "head": "cozze crema",
+          "head": "Cozze Crema",
           "vegetarian": false,
           "price": 6.95,
           "subhead": "",
           "description": "Mussels in white wine, cream sauce with shallots, served with a toasted bread."
         },
         {
-          "head": "cozze marinara",
+          "head": "Cozze Marinara",
           "vegetarian": false,
           "price": 6.95,
           "subhead": "",
           "description": "Mussels cooked in tomato sauce garlic and white wine, served with a fried bread."
         },
         {
-          "head": "zuppa del giorno",
+          "head": "Zuppa del Giorno",
           "vegetarian": false,
           "price": 4.95,
           "subhead": "",
           "description": "Soup of the day served with home-made bread of the day."
         },
         {
-          "head": "capiese",
+          "head": "Caprese",
           "vegetarian": true,
           "price": 6.25,
           "subhead": "",
           "description": "Fresh tomatoes, mozzarella served on a bed of rocket salad with fresh basil and olive oil."
         },
         {
-          "head": "invollino di salmone",
+          "head": "Involtini di Salmone",
           "vegetarian": false,
           "price": 7.45,
           "subhead": "",
           "description": "Smoked salmon rolled with prawns and marie rose sauce."
         },
         {
-          "head": "capesante al pioasciatto",
+          "head": "Capesante al Prosciutto",
           "vegetarian": false,
           "price": 9.95,
           "subhead": "",
           "description": "Pan-fried king scallops warpped in parma ham, srved on bed of mashed peas."
         },
         {
-          "head": "caeasar salad",
+          "head": "Caesar Salad",
           "vegetarian": false,
           "price": 9.45,
           "subhead": "",
