@@ -53,6 +53,8 @@ html{
 body{
   font-family: $font;
   color: $bodyText;
+  background-image: url("../img/background.png");
+  background-repeat: repeat;
   background-color: $allegriaGold;
   @include fontSize(16px);
 }
@@ -193,14 +195,14 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (min-width: 1200px) {
-    background-image: url("../img/allegria_banner.jpg");
+  @media screen and (min-width: 1201px) {
+    background-image: url("../img/allegria_banner.webp"), url("../img/allegria_banner.jpg");
   }
   @media screen and (max-width: 1200px) {
-    background-image: url("../img/allegria_banner_m.jpg");
+    background-image: url("../img/allegria_banner_m.webp"), url("../img/allegria_banner.jpg");
   }
   @media screen and (max-width: 420px) {
-    background-image: url("../img/allegria_banner_s.jpg");
+    background-image: url("../img/allegria_banner_s.webp"), url("../img/allegria_banner.jpg");
   }
 
 }
@@ -233,7 +235,7 @@ section{
 
 .subHeader{
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
 }
 
 .menuWrapper{
@@ -277,12 +279,24 @@ section{
 
 #menuFooter{
   text-align: center;
+  padding-top: 30px;
 }
 
 .menuItem{
   border-top: 1px solid #707070;
   padding: 10px;
+
+&:last-of-type {
+    border-bottom: 1px solid #707070;
+  }
+
 }
+
+.menuItem:nth-child(2n + 1):nth-last-child(-n + 2),
+.menuItem:nth-child(2n + 1):nth-last-child(-n + 2) ~ .menuItem {
+  border-bottom: 1px solid #707070;
+}
+
 
 .menuItemWrapper{
   display: grid;

@@ -38,11 +38,11 @@ class MailScript
   {
     if (version_compare(PHP_VERSION, '7.2.0') >= 0) {
       $headers = [
-        'From' => $this->email
+        'From' => $this->forward_email
       ];
       return $headers;
     } else {
-      return 'From: ' . $this->email;
+      return 'From: ' . $this->forward_email;
     }
   }
 

@@ -1,17 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
+  //JSON file with menu contents.
   let requestURL = './menu.json';
 
   let request = new XMLHttpRequest();
+  //Get file from URL and load it.
   request.open('GET', requestURL);
   request.responseType = 'json';
   request.send();
 
   request.onload = function() {
+    //Get JSON from the response.
     const menu = request.response;
-    //console.log(menu);
 
+    //Select menu array.
     const section = menu['menuSection'];
 
+    //Loop through the menu array.
     section.forEach(menuSection => {
 
       //Create Subheader Div
@@ -42,17 +46,19 @@ document.addEventListener("DOMContentLoaded", function(){
       let getSubheaderDivWrap = document.getElementById("menuDiv");
       getSubheaderDivWrap.appendChild(menuWrapper);
 
+      //Loop through each item in a menu section.
       menuSection['menuItem'].forEach(menuItem =>{
 
+        //Item name.
         let name = menuItem.head;
+        //Is item vegetarian.
         let vegetarian = menuItem.vegetarian;
+        //Item price.
         let price = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(menuItem.price);
-        //let subHeading = menuItem.subhead;
+        //Item subheading.
+        let subHeading = menuItem.subhead;
+        //Item description.
         let description = menuItem.description;
-
-/*        if(vegetarian){
-          console.log(name);
-        }*/
 
         //Create menu item div
         let itemDiv = document.createElement("div");
@@ -78,12 +84,13 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
         //Create menu item divs
+        //Header
         let menuItemHeaderDiv = document.createElement("div");
         menuItemHeaderDiv.setAttribute("class", "menuItemHeader");
-
+        //Price
         let menuItemPriceDiv = document.createElement("div");
         menuItemPriceDiv.setAttribute("class", "menuItemPrice");
-
+        //Description
         let menuItemDescriptionDiv = document.createElement("div");
         menuItemDescriptionDiv.setAttribute("class", "menuItemDescription");
 
@@ -97,7 +104,12 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
         let menuItemHeaderH4 = document.createElement('h4');
-        let menuItemHeaderText = document.createTextNode(name);
+        if(vegetarian){
+          var menuItemHeaderText = document.createTextNode(name + " \t\ud83e\udd6c");
+        } else {
+          var menuItemHeaderText = document.createTextNode(name);
+        }
+
         menuItemHeaderH4.appendChild(menuItemHeaderText);
 
         let getMenuItemHeaderH4 = document.getElementsByClassName('menuItemHeader');

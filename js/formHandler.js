@@ -31,13 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  //Gets the form
   const reservationForm = document.querySelector("form");
 
+  //Listens for the form to obe submitted.
   reservationForm.addEventListener('submit', (e) => {
+    //Prevents the form from firing by default.
     e.preventDefault();
+    //creates a formdata object
     new FormData(reservationForm);
   });
 
+  //waits for the form data
   reservationForm.addEventListener('formdata', (e) => {
     // Get the form data from the event object
     let data = e.formData;
@@ -46,17 +51,24 @@ document.addEventListener("DOMContentLoaded", function() {
     let request = new XMLHttpRequest();
 
     request.onload = function () {
+      //Gets div with ID notification.
       const notification = document.getElementById("notification");
+      //Creates the P tag in the div.
       const notificationText = document.createElement("p");
+      //Switch statement that checks the status of the form request.
       switch (request.status) {
         case 200:
           const notification200 = document.createTextNode("Message sent, we'll get back to you as soon as possible to confirm your reservation.");
           notificationText.appendChild(notification200);
+          //Check if the p tag has already been created so on repeat entries of the form it doesn't add more text to the notification.
           if (!(notification.hasChildNodes())) {
             notification.appendChild(notification200);
           }
+          //displays the div
           notification.style.display = "block";
+          //div background colour
           notification.style.backgroundColor = "#3A8278";
+          //sets a time out of the div to disappear after 30 seconds
           setTimeout(function(){notification.style.display = "none"; }, 30000);
           break;
         case 400:
@@ -81,10 +93,13 @@ document.addEventListener("DOMContentLoaded", function() {
           break;
       }
     };
-
+    //initialises the send request with a post method and directs it to a PHP script that sends the email message
     request.open("POST", "mailer.php");
+    //sends data
     request.send(data);
+    //Resets the form inputs.
     reservationForm.reset();
+    //Inserts the date after the form has been reset.
     dateSelector.value = todaysDate;
   });
 });
