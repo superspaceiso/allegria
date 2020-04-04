@@ -69,11 +69,12 @@ section:last-child { margin-bottom: 30px; }
 
 #menuFooter { text-align: center; padding-top: 30px; }
 
-.menuItem { border-top: 1px solid #707070; padding: 10px; }
-.menuItem:last-of-type { border-bottom: 1px solid #707070; }
+.menuItem { padding: 10px; }
 
-.menuItem:nth-child(2n + 1):nth-last-child(-n + 2), .menuItem:nth-child(2n + 1):nth-last-child(-n + 2) ~ .menuItem { border-bottom: 1px solid #707070; }
-
+@media screen and (max-width: 800px) { .menuItem { border-top: 1px solid #707070; }
+  .menuItem:last-child { border-bottom: 1px solid #707070; } }
+@media screen and (min-width: 801px) { .menuItem { border-top: 1px solid #707070; }
+  .menuItem:nth-child(2n + 1):nth-last-child(-n + 2), .menuItem:nth-child(2n + 1):nth-last-child(-n + 2) ~ .menuItem { border-bottom: 1px solid #707070; } }
 .menuItemWrapper { display: grid; grid-template-columns: 80fr 20fr; }
 .menuItemWrapper .menuItemPrice p { margin: 0; text-align: right; font-size: 1.125rem; font-weight: 600; }
 

@@ -283,20 +283,27 @@ section{
 }
 
 .menuItem{
-  border-top: 1px solid #707070;
   padding: 10px;
+}
 
-&:last-of-type {
+@media screen and (max-width: 800px) {
+  .menuItem {
+    border-top: 1px solid #707070;
+    &:last-child{
+      border-bottom: 1px solid #707070;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .menuItem {
+    border-top: 1px solid #707070;
+  }
+  .menuItem:nth-child(2n + 1):nth-last-child(-n + 2),
+  .menuItem:nth-child(2n + 1):nth-last-child(-n + 2) ~ .menuItem {
     border-bottom: 1px solid #707070;
   }
-
 }
-
-.menuItem:nth-child(2n + 1):nth-last-child(-n + 2),
-.menuItem:nth-child(2n + 1):nth-last-child(-n + 2) ~ .menuItem {
-  border-bottom: 1px solid #707070;
-}
-
 
 .menuItemWrapper{
   display: grid;
