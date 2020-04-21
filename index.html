@@ -76,17 +76,19 @@
 
 <body>
   <!--Header contains the navigation menu and logo-->
-  <header>
+  <header id="navArea">
   <!--Container holds the content in the centre of the screen-->
   <div class="container">
   <nav>
     <ul class="menu">
       <li class="logo">
         <!--Picture contains vector logo with a PNG fallback for browsers that don't support SVG-->
+        <a href="index.html">
         <picture>
           <source type="image/svg+xml" srcset="img/allegria_logo.svg">
           <img src="img/allegria_logo.png" alt="Allegria">
         </picture>
+        </a>
       </li>
       <!--      Navigation links, anchored to section headings-->
       <li class="item"><a href="#home">Home</a></li>
@@ -238,10 +240,10 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 
   <!--  Internal JS scripts-->
-  <script src="js/restaurantMenu.min.js"></script>
-  <script src="js/formHandler.min.js"></script>
-  <script  src="js/navMenu.min.js"></script>
-
+  <script src="js/restaurantMenu.js"></script>
+  <script src="js/formHandler.js"></script>
+  <script src="js/navMenu.js"></script>
+  <script src="js/stickyNavigation.js"></script>
 </body>
 
 </html>

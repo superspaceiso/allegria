@@ -19,6 +19,7 @@ h4 { font-size: 1.125rem; color: #3A8278; }
 
 .logo { width: 140px; height: 140px; }
 .logo img { height: 100%; width: auto; }
+.logo a:hover { border-bottom: unset; }
 
 header { background-color: #ffffff; }
 
@@ -28,7 +29,7 @@ nav a { color: #000000; text-decoration: none; }
 nav a:visited { color: #000000; }
 nav a:hover { color: #3A8278; border-bottom: 2px solid #3A8278; }
 nav .menu li { padding: 10px; white-space: nowrap; }
-nav .toggle a { font-size: 3.75rem; }
+nav .toggle a { font-size: 2.5rem; }
 nav .toggle a:hover { border-bottom: unset; }
 nav .menu { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
 nav .toggle { order: 1; }
@@ -40,9 +41,9 @@ nav .item.active { display: block; }
   nav .menu li { padding: 15px 10px; } }
 
 .siteBanner { height: 400px; border-bottom: 1px solid #ffffff; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
-@media screen and (min-width: 1201px) { .siteBanner { background-image: url("../img/allegria_banner.webp"), url("../img/allegria_banner.jpg"); } }
-@media screen and (max-width: 1200px) { .siteBanner { background-image: url("../img/allegria_banner_m.webp"), url("../img/allegria_banner.jpg"); } }
-@media screen and (max-width: 420px) { .siteBanner { background-image: url("../img/allegria_banner_s.webp"), url("../img/allegria_banner.jpg"); } }
+@media screen and (min-width: 1201px) { .siteBanner { background-image: url("../img/allegria_banner.jpg"); } }
+@media screen and (max-width: 1200px) { .siteBanner { background-image: url("../img/allegria_banner.jpg"); } }
+@media screen and (max-width: 420px) { .siteBanner { background-image: url("../img/allegria_banner.jpg"); } }
 
 .bannerText { height: 100px; padding-top: 120px; }
 @media screen and (max-width: 420px) { .bannerText { padding-top: 20px; } }

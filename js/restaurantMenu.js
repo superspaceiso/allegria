@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
         let menuItemHeaderH4 = document.createElement('h4');
+
+        ///checks if menu item is vegetarian or not and applies a symbol if it is
         if(vegetarian){
           var menuItemHeaderText = document.createTextNode(name + " \t\ud83e\udd6c");
         } else {
