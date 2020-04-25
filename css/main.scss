@@ -98,14 +98,17 @@ h4{
   }
 }
 
-.logo {
-  width: 140px;
-  height: 140px;
+.logo{
+  width: 110px;
+  height: 110px;
+  @media screen and (max-width: 800px) {
+    width: 80px;
+    height: 80px;
+  }
   img {
     height: 100%;
     width: auto;
   }
-
   a:hover{
     border-bottom: unset;
   }
@@ -118,12 +121,13 @@ header{
 nav {
   @include fontSize(20px);
   @include font-weight(semi-bold);
-
+  @media screen and (max-width: 800px) {
+    @include fontSize(16px);
+  }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
   }
 
   a {
