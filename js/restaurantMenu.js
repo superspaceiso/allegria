@@ -1,12 +1,24 @@
-document.addEventListener("DOMContentLoaded", function(){
-  //JSON file with menu contents.
-  let requestURL = './menu.json';
+//JSON file with menu contents.
+let requestURL = './menu.json';
 
-  let request = new XMLHttpRequest();
-  //Get file from URL and load it.
-  request.open('GET', requestURL);
-  request.responseType = 'json';
-  request.send();
+const request = new XMLHttpRequest();
+request.open("GET", requestURL, true);
+request.onload = function (e) {
+  if (request.readyState === 4) {
+    if (request.status === 200) {
+      console.log(request.responseText);
+    } else {
+      console.error(request.statusText);
+    }
+  }
+};
+request.onerror = function (e) {
+  console.error(request.statusText);
+};
+request.responseType = 'json';
+request.send();
+
+document.addEventListener("DOMContentLoaded", function(){
 
   request.onload = function() {
     //Get JSON from the response.
